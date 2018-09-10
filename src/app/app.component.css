@@ -1,0 +1,31 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 248px;
+}
+
+.bird {
+	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells.svg);
+	background-size: auto 100%;
+	width: 166px;
+	height: 248px;
+	will-change: background-position;
+
+	animation-name: fly-cycle;
+	animation-duration: 1s;
+	animation-delay: -0.5s;
+	animation-timing-function: steps(10);
+	animation-iteration-count: infinite;
+}
+
+.bird-container {
+	position: absolute;
+	top: 0%;
+	left: 40%;
+}
+
+@keyframes fly-cycle {
+	100% {
+		background-position: -3600px 0;
+	}
+}

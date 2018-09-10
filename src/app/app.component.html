@@ -1,0 +1,14 @@
+<div class="container">
+	<div class="bird-container">
+		<div class="bird"></div>
+  </div>
+</div>
+<br>
+<label>Type message: </label>
+<input [(ngModel)]="yourText" type="text" />
+Your message is: <label>{{yourText}}</label>
+<br><br>
+<button (click)="processNonWorker()">Start Processing (Non Web Worker)</button> &nbsp;&nbsp;
+<button (click)="processWorker()">Start Processing (Web Worker)</button>
+<h3>{{workerResponse}}</h3>
+
